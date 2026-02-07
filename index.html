@@ -93,60 +93,39 @@
 <body>
     <!-- ヘッダー部分 -->
     <header>
-        <h1>山田太郎</h1>
-        <p>Web開発を学習中です</p>
+        <h1>kaiwarex</h1>
+        <p>検証用ページ</p>
     </header>
 
     <!-- メインコンテンツ -->
     <div class="container">
-        <!-- 自己紹介セクション -->
+        <!--セクション -->
         <section>
-            <h2>自己紹介</h2>
-            <p>
-                はじめまして、山田太郎です。現在、Web開発の基礎を学んでいます。
-                特にHTMLとCSSに興味があり、美しいWebページを作れるようになることが目標です。
-            </p>
-        </section>
-
-        <!-- スキルセクション -->
-        <section>
-            <h2>学習中のスキル</h2>
+            <h2>検証中の項目</h2>
             <ul>
-                <li>HTML5 - Webページの構造を作る</li>
-                <li>CSS3 - デザインとレイアウト</li>
-                <li>JavaScript - 動きのあるWebページ(これから)</li>
+                <li>Vanilla JS</li>
+                <li>JSコードをTypeScriptへ書き換える(これから)</li>
+                <li>Expressでの作成したAPIをJSあるいはTSから叩く(これから)</li>
             </ul>
         </section>
 
-        <!-- 趣味セクション -->
         <section>
-            <h2>趣味</h2>
-            <ul>
-                <li>読書</li>
-                <li>プログラミング</li>
-                <li>カメラ</li>
-            </ul>
-        </section>
-
-        <!-- コンタクトセクション -->
-        <section>
-            <h2>お問い合わせ</h2>
-            <p>ご連絡はこちらからお願いします。</p>
-            <a href="mailto:example@example.com" class="button">メールを送る</a>
-        </section>
-        <!-- 謎のフォームセクション -->
-        <section>
-            <h2>謎のフォーム</h2>
-            <p>触ってみたらいいよ・・・</p>
+            <h2>検証用フォーム</h2>
             <form action="" method="get" onsubmit="return false;">
                 <input type="button" value="exe1" onclick="test01()">
                 <!-- 美しくないやり方だけど応急処置的な改行 -->
                 <br>
-                <!-- チェックボックス -->
+                <!-- チェックボックス (not配列)-->
                 <input type="checkbox" name="01" id="chk01" value="chkbox01">
                 <input type="checkbox" name="02" id="chk02" value="chkbox02">
                 <input type="checkbox" name="03" id="chk03" value="chkbox03">
                 <input type="button" value="exe2" onclick="test02()">
+                <br>
+                <!-- チェックボックス (配列)-->
+                <input type="checkbox" name="chkbox" id="chk" value="chkbox01">
+                <input type="checkbox" name="chkbox" id="chk" value="chkbox02">
+                <input type="checkbox" name="chkbox" id="chk" value="chkbox03">
+                <input type="button" value="exe2_" onclick="test02_()">
                 <br>
                 <!-- ラジオボタン -->
                 <input type="radio" name="01" id="rdo01" value="rdobtn01">
@@ -164,8 +143,13 @@
                     <option value="spider">クモ</option>
                     <option value="goldfish">金魚</option>
                 </select>
+                <input type="button" value="exe4" onclick="test04()">
+                <br>
             </form>
+            <!-- 出力用の領域 -->
             <span id="disp_field"></span>
+            <br>
+            <span id="disp_field_"></span>
             <br>
             <span id="disp_field02"></span>
             <br>
@@ -175,7 +159,7 @@
 
     <!-- フッター -->
     <footer>
-        <p>&copy; 2026 山田太郎. CSS学習用サンプルページ</p>
+        <p>&copy; 2026 kaiwarex. CSS学習用サンプルページ</p>
     </footer>
 </body>
 </html>
