@@ -32,5 +32,5 @@ function test02_(){
 - Vanilla JS
 
 ## 開発環境
-使用OS：MacOS Sequioia 15.5
+使用OS：MacOS Sequioia 15.5  
 エディタ：Visual Studio Code 1.109.3 (Universal)
